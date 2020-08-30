@@ -1,0 +1,37 @@
+pragma solidity 0.4.12 <= 0.6.12;
+
+contract EmployeeDetails
+
+ { 
+             string CompanyName;
+             string EmployeeName;
+             string addss;
+             int PhoneNumber;
+             string EmployeeId;
+             int salary;
+             string EmployeePosition;
+ 
+ function EmployeeDetails(string newCompanyName, string newEmployeeName, string newAddrs, int newPhoneNumber, string newEmployeeId,
+ int newSalary, string newEmployeePosition)
+ 
+ public
+           {
+                 CompanyName= newCompanyName;
+                 EmployeeName = newEmployeeName;
+                 addss = newAddrs;
+                 PhoneNumber = newPhoneNumber;
+                 EmployeeId = newEmployeeId;
+                 salary = newSalary;
+                 EmployeePosition = newEmployeePosition;
+              
+            }
+         
+ 
+ function getEmployeeDetails() public returns(string, string,string,int,string,int, string)
+ 
+            { 
+                return(CompanyName,EmployeeName, addss, PhoneNumber, EmployeeId, salary, EmployeePosition);
+            }   
+ 
+ 
+  }
